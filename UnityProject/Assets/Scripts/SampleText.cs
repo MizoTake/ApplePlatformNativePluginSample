@@ -11,7 +11,7 @@ namespace ApplePlatformNativePlugin {
         
 #if UNITY_EDITOR_OSX || UNITY_STANDALONE_OSX
         private const string LibraryName = "XcodeProject";
-#elif UNITY_IOS && !UNITY_EDITOR
+#elif (UNITY_IOS || UNITY_TVOS) && !UNITY_EDITOR
         private const string LibraryName = "__Internal";
 #endif
         
